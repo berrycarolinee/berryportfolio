@@ -1,0 +1,108 @@
+body {
+  font-family: 'Slim Joe', sans-serif;
+}
+
+#logo {
+  display: inline-block;
+  height: 80px;
+}
+
+#name, #description {
+  margin: 0;
+}
+
+#title {
+  padding-left: 2%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 8px;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 98%;
+}
+
+#featured {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 2%;
+}
+
+@media screen and (max-width: 415px) {
+  #main {
+    width: 98%;
+    padding: 2%;
+  }
+  #mayabay, #craterlake, #zion, #everest {
+    width: 98%;
+    height: 100%;
+    padding: 2%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 416px) {
+  #main {
+    width: 98%;
+    padding: 2%;
+  }
+
+  #mayabay, #craterlake, #everest, #zion {
+    height: 100%;
+    width: 46%;
+    padding: 2%;
+  }
+  .main {
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 790px) {
+  .main {
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #main {
+    width: 98%;
+    padding: 2%;
+  }
+  #mayabay, #craterlake, #everest, #zion {
+    height: 100%;
+    width: 21%;
+    padding: 2%;
+  }
+  header {
+    text-align: left;
+  }
+  .nav-list {
+    margin-left: auto;
+  }
+}
